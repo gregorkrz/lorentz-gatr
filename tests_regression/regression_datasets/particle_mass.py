@@ -1,6 +1,6 @@
 import torch
 
-from gatr.interface import embed_vector, extract_scalar
+from lgatr.interface import embed_vector, extract_scalar
 from tests_regression.regression_datasets.constants import DATASET_SIZE, DEVICE
 
 

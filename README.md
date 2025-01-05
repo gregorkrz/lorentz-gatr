@@ -76,8 +76,8 @@ objects into this multivector representations (in `gatr/interface/`)
 Here is an example code snippet for a GATr jet tagger that illustrates the recipe, you can find more examples at `experiments/amplitudes/wrappers.py`, `experiments/tagging/wrappers.py` and `experiments/eventgen/wrappers.py`
 
 ```python
-from gatr import GATr, SelfAttentionConfig, MLPConfig
-from gatr.interface import embed_vector, extract_scalar, embed_spurions
+from lgatr import GATr, SelfAttentionConfig, MLPConfig
+from lgatr.interface import embed_vector, extract_scalar, embed_spurions
 import torch
 
 
@@ -107,7 +107,7 @@ class ExampleWrapper(torch.nn.Module):
             attention=SelfAttentionConfig(),  # Use default parameters for attention
             mlp=MLPConfig(),  # Use default parameters for MLP
         )
-        
+
     def forward(self, fourmomenta):
         """Forward pass.
         
@@ -122,24 +122,25 @@ class ExampleWrapper(torch.nn.Module):
             Model prediction: a single scalar for the whole point cloud.
         """
         batchsize, num_points, _ = fourmomenta.shape
-        
+
         # Embed fourmomentum point cloud inputs in GA
         multivectors = embed_vector(fourmomenta).unsqueeze(-2)  # (batchsize, num_points, 1, 16)
-        
+
         # Append spurions for symmetry breaking (optional)
-        spurions = embed_spurions(beam_reference="xyplane", add_time_reference=True, device=fourmomenta.device, dtype=fourmomenta.dtype)  # (2, 16)
+        spurions = embed_spurions(beam_reference="xyplane", add_time_reference=True, device=fourmomenta.device,
+                                  dtype=fourmomenta.dtype)  # (2, 16)
         spurions = spurions[None, None, ...].repeat(batchsize, num_points, 1, 1)  # (batchsize, num_points, 2, 16)
         multivectors = torch.cat((multivectors, spurions), dim=-2)  # (batchsize, num_points, 3, 16)
-        
+
         # Pass data through GATr
         multivector_outputs, _ = self.gatr(multivectors, scalars=None)  # (batchsize, num_points, 1, 16)
-        
+
         # Extract scalar outputs 
         outputs = extract_scalar(multivector)  # (batchsize, num_points, 1)
-        
+
         # Mean aggregation to extract a single scalar for the whole point cloud
         score = outputs.mean(dim=1)
-        
+
         return score
 ```
 

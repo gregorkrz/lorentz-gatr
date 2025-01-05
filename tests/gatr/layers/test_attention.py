@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.layers import SelfAttention, SelfAttentionConfig
+from lgatr.layers import SelfAttention, SelfAttentionConfig
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

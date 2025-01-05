@@ -1,9 +1,9 @@
 import pytest
 import torch
 
-from gatr.layers.attention.config import SelfAttentionConfig
-from gatr.layers.mlp.config import MLPConfig
-from gatr.nets import AxialGATr
+from lgatr.layers.attention.config import SelfAttentionConfig
+from lgatr.layers.mlp.config import MLPConfig
+from lgatr.nets import AxialGATr
 from tests.helpers import BATCH_DIMS, MILD_TOLERANCES, check_pin_equivariance
 
 S_CHANNELS = [(None, None, 7, [False, False]), (4, 5, 6, [True, True])]

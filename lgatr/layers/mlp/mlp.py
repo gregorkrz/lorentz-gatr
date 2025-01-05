@@ -5,11 +5,11 @@ from typing import List, Tuple, Union
 import torch
 from torch import nn
 
-from gatr.layers.dropout import GradeDropout
-from gatr.layers.linear import EquiLinear
-from gatr.layers.mlp.config import MLPConfig
-from gatr.layers.mlp.geometric_bilinears import GeometricBilinear
-from gatr.layers.mlp.nonlinearities import ScalarGatedNonlinearity
+from lgatr.layers.dropout import GradeDropout
+from lgatr.layers.linear import EquiLinear
+from lgatr.layers.mlp.config import MLPConfig
+from lgatr.layers.mlp.geometric_bilinears import GeometricBilinear
+from lgatr.layers.mlp.nonlinearities import ScalarGatedNonlinearity
 
 USE_GEOMETRIC_PRODUCT = True
 

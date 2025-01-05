@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.interface import embed_scalar
+from lgatr.interface import embed_scalar
 from tests.helpers import BATCH_DIMS, TOLERANCES
 
 

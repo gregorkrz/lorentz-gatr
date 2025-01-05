@@ -4,7 +4,7 @@ from torch_ema import ExponentialMovingAverage
 
 from experiments.tagging.experiment import TopTaggingExperiment
 from experiments.logger import LOGGER
-from gatr.layers.linear import EquiLinear
+from lgatr.layers.linear import EquiLinear
 
 
 class TopTaggingFineTuneExperiment(TopTaggingExperiment):

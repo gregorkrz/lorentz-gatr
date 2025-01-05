@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch_geometric.nn.aggr import MeanAggregation
 
-from gatr.interface import extract_scalar
+from lgatr.interface import extract_scalar
 from xformers.ops.fmha import BlockDiagonalMask
 
 

@@ -2,7 +2,7 @@ _target_: experiments.amplitudes.wrappers.AmplitudeGATrWrapper
 reinsert_type_token: false
 
 net:
- _target_: gatr.nets.GATr
+ _target_: lgatr.nets.GATr
 
  in_mv_channels: 1
  out_mv_channels: 1

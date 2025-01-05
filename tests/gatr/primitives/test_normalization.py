@@ -3,7 +3,7 @@
 import pytest
 import torch
 
-from gatr.primitives import equi_layer_norm, abs_squared_norm
+from lgatr.primitives import equi_layer_norm, abs_squared_norm
 from tests.helpers import TOLERANCES, check_pin_equivariance
 
 

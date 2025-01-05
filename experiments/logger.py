@@ -7,7 +7,7 @@ FORMATTER = logging.Formatter(
 MEMORY_HANDLER = logging.handlers.MemoryHandler(capacity=100)
 MEMORY_HANDLER.setFormatter(FORMATTER)
 
-LOGGER = logging.getLogger("lorentz-gatr")
+LOGGER = logging.getLogger("lorentz-lgatr")
 LOGGER.setLevel(logging.DEBUG)
 LOGGER.addHandler(MEMORY_HANDLER)
 LOGGING_INITIALIZED = False

@@ -1,5 +1,5 @@
 import torch
-from gatr.interface import embed_vector
+from lgatr.interface import embed_vector
 
 
 def get_num_spurions(

@@ -6,8 +6,8 @@ from einops import rearrange
 from torch import nn
 from torch.utils.checkpoint import checkpoint
 
-from gatr.layers import ApplyRotaryPositionalEncoding
-from gatr.primitives.attention import scaled_dot_product_attention
+from lgatr.layers import ApplyRotaryPositionalEncoding
+from lgatr.primitives.attention import scaled_dot_product_attention
 from experiments.misc import to_nd
 
 

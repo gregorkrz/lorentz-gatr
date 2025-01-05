@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.primitives.dropout import grade_dropout
+from lgatr.primitives.dropout import grade_dropout
 from tests.helpers import (
     BATCH_DIMS,
     MILD_TOLERANCES,

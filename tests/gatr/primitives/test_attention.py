@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.primitives import sdp_attention
+from lgatr.primitives import sdp_attention
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

@@ -3,7 +3,7 @@
 import pytest
 import torch
 
-from gatr.primitives import (
+from lgatr.primitives import (
     inner_product,
     squared_norm,
     abs_squared_norm,

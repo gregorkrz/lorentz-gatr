@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.layers.mlp.nonlinearities import ScalarGatedNonlinearity
+from lgatr.layers.mlp.nonlinearities import ScalarGatedNonlinearity
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

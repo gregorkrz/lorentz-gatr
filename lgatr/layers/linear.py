@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from torch import nn
 
-from gatr.interface import embed_scalar
-from gatr.primitives.linear import equi_linear
+from lgatr.interface import embed_scalar
+from lgatr.primitives.linear import equi_linear
 
 # switch to mix pseudoscalar multivector components directly into scalar components
 # this only makes sense when working with the special orthochronous Lorentz group,
@@ -29,7 +29,7 @@ class EquiLinear(nn.Module):
     plus an optional bias term for outputs[..., :, 0] (biases in other multivector components would
     break equivariance).
 
-    Here basis_map are precomputed (see gatr.primitives.linear) and weights are the
+    Here basis_map are precomputed (see lgatr.primitives.linear) and weights are the
     learnable weights of this layer.
 
     If there are auxiliary input scalars, they transform under a linear layer, and mix with the
@@ -143,7 +143,7 @@ class EquiLinear(nn.Module):
         = sum_i linear(inputs[..., i, :], weights[j, i, :])
         ```
 
-        Here basis_map are precomputed (see gatr.primitives.linear) and weights are the
+        Here basis_map are precomputed (see lgatr.primitives.linear) and weights are the
         learnable weights of this layer.
 
         Parameters

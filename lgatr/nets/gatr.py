@@ -7,10 +7,10 @@ import torch
 from torch import nn
 from torch.utils.checkpoint import checkpoint
 
-from gatr.layers.attention.config import SelfAttentionConfig
-from gatr.layers.gatr_block import GATrBlock
-from gatr.layers.linear import EquiLinear
-from gatr.layers.mlp.config import MLPConfig
+from lgatr.layers.attention.config import SelfAttentionConfig
+from lgatr.layers.gatr_block import GATrBlock
+from lgatr.layers.linear import EquiLinear
+from lgatr.layers.mlp.config import MLPConfig
 
 
 class GATr(nn.Module):

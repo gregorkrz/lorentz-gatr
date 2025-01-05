@@ -2,7 +2,7 @@
 
 import torch
 
-from gatr.utils.clifford import SlowRandomPinTransform
+from lgatr.utils.clifford import SlowRandomPinTransform
 
 
 def get_first_output(outputs):

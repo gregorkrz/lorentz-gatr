@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from gatr.interface import embed_vector, extract_vector, embed_spurions
+from lgatr.interface import embed_vector, extract_vector, embed_spurions
 from experiments.eventgen.cfm import EventCFM
 from experiments.eventgen.utils import get_type_token, get_process_token
 
@@ -179,15 +179,15 @@ class GATrCFM(EventCFMForGA):
         beam_reference : str
             Type of beam reference used to break the Lorentz symmetry
             Options: [None, "xyplane", "spacelike", "lightlike", "timelike"]
-            See gatr.interface.spurions.py::embed_spurions for details
+            See lgatr.interface.spurions.py::embed_spurions for details
         two_beams : bool
             If beam_reference in ["spacelike", "lightlike", "timelike"],
             decide whether only (alpha,0,0,1) or both (alpha,0,0,+/-1) are included
-            See gatr.interface.spurions.py::embed_spurions for details
+            See lgatr.interface.spurions.py::embed_spurions for details
         add_time_reference : bool
             Whether time direction (1,0,0,0) is included to break Lorentz group down to SO(3)
             This is formally required, because equivariant generation on non-compact groups is not possible
-            See gatr.interface.spurions.py::embed_spurions for details
+            See lgatr.interface.spurions.py::embed_spurions for details
         scalar_dims : List[int]
             Components within the used parametrization
             for which the equivariantly predicted velocity (using multivector channels)

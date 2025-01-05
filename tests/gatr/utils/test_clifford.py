@@ -1,9 +1,9 @@
-"""Unit tests for gatr.utils.ga_clifford."""
+"""Unit tests for lgatr.utils.ga_clifford."""
 
 import pytest
 import torch
 
-from gatr.utils.clifford import mv_list_to_tensor, tensor_to_mv_list
+from lgatr.utils.clifford import mv_list_to_tensor, tensor_to_mv_list
 
 
 @pytest.mark.parametrize("batch_dims", [(1,), (100,), (5, 7), tuple()])

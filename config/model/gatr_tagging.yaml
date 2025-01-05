@@ -3,7 +3,7 @@ force_xformers: '${training.force_xformers}'
 mean_aggregation: false
 
 net:
- _target_: gatr.nets.GATr
+ _target_: lgatr.nets.GATr
 
  in_mv_channels: 1
  out_mv_channels: 1

@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from torch_geometric.utils import dense_to_sparse
 
-from gatr.interface import embed_vector, extract_scalar
+from lgatr.interface import embed_vector, extract_scalar
 
 
 def encode_tokens(type_token, global_token, token_size, isgatr, batchsize, device):

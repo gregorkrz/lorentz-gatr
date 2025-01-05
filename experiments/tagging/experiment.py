@@ -7,7 +7,7 @@ from omegaconf import open_dict
 
 from sklearn.metrics import roc_curve, roc_auc_score, accuracy_score
 
-from gatr.interface.spurions import get_num_spurions
+from lgatr.interface.spurions import get_num_spurions
 from experiments.base_experiment import BaseExperiment
 from experiments.tagging.dataset import TopTaggingDataset
 from experiments.tagging.dataset import QGTaggingDataset

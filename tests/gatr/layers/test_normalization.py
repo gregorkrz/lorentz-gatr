@@ -1,8 +1,8 @@
 import pytest
 import torch
 
-from gatr.layers.layer_norm import EquiLayerNorm
-from gatr.primitives import abs_squared_norm
+from lgatr.layers.layer_norm import EquiLayerNorm
+from lgatr.primitives import abs_squared_norm
 from tests.helpers import TOLERANCES, check_pin_equivariance
 
 

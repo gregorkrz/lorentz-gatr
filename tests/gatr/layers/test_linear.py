@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.layers.linear import EquiLinear, MIX_MVPSEUDOSCALAR_INTO_SCALAR
+from lgatr.layers.linear import EquiLinear, MIX_MVPSEUDOSCALAR_INTO_SCALAR
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

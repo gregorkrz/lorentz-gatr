@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.layers.mlp.geometric_bilinears import GeometricBilinear
+from lgatr.layers.mlp.geometric_bilinears import GeometricBilinear
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

@@ -3,8 +3,8 @@
 import pytest
 import torch
 
-from gatr.primitives import gated_relu, gated_sigmoid
-from gatr.primitives.nonlinearities import gated_gelu
+from lgatr.primitives import gated_relu, gated_sigmoid
+from lgatr.primitives.nonlinearities import gated_gelu
 from tests.helpers import BATCH_DIMS, TOLERANCES, check_pin_equivariance
 
 

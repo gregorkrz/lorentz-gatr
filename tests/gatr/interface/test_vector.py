@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 import torch
 
-from gatr.interface import embed_vector, extract_vector
+from lgatr.interface import embed_vector, extract_vector
 from tests.helpers import BATCH_DIMS, TOLERANCES
 
 

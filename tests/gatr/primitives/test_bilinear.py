@@ -2,7 +2,7 @@
 
 import pytest
 
-from gatr.primitives.bilinear import geometric_product
+from lgatr.primitives.bilinear import geometric_product
 from tests.helpers import (
     BATCH_DIMS,
     TOLERANCES,

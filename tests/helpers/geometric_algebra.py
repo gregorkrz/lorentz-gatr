@@ -4,7 +4,7 @@ import clifford
 import numpy as np
 import torch
 
-from gatr.utils.clifford import mv_list_to_tensor
+from lgatr.utils.clifford import mv_list_to_tensor
 
 LAYOUT, _ = clifford.Cl(1, 3)
 

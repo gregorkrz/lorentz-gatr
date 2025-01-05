@@ -1,6 +1,6 @@
 import torch
 
-from gatr.utils.tensors import block_stack
+from lgatr.utils.tensors import block_stack
 
 
 def test_block_stack():

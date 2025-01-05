@@ -1,7 +1,7 @@
 import pytest
 import torch
 
-from gatr.layers.dropout import GradeDropout
+from lgatr.layers.dropout import GradeDropout
 from tests.helpers import MILD_TOLERANCES, TOLERANCES, check_pin_equivariance
 
 

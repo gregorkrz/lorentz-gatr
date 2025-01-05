@@ -4,7 +4,7 @@ import opt_einsum
 import pytest
 import torch
 
-from gatr.utils.einsum import cached_einsum
+from lgatr.utils.einsum import cached_einsum
 
 _DIM = 5
 

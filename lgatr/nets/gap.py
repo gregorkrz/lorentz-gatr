@@ -5,8 +5,8 @@ import torch
 from torch import nn
 from torch.utils.checkpoint import checkpoint
 
-from gatr.layers.linear import EquiLinear
-from gatr.layers.mlp import MLPConfig, GeoMLP
+from lgatr.layers.linear import EquiLinear
+from lgatr.layers.mlp import MLPConfig, GeoMLP
 
 
 class GAP(nn.Module):

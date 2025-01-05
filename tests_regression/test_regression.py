@@ -4,9 +4,9 @@ import pytest
 import torch
 from tqdm import trange
 
-from gatr.layers.attention.config import SelfAttentionConfig
-from gatr.layers.mlp.config import MLPConfig
-from gatr.nets import GATr
+from lgatr.layers.attention.config import SelfAttentionConfig
+from lgatr.layers.mlp.config import MLPConfig
+from lgatr.nets import GATr
 from tests_regression.regression_datasets.constants import BATCHSIZE, DEVICE, NUM_EPOCHS
 from tests_regression.regression_datasets.particle_mass import (
     ParticleMassDataset,
