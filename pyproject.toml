@@ -24,4 +24,4 @@ homepage = "https://github.com/heidelberg-hepml/lorentz-gatr"
 repository = "https://github.com/heidelberg-hepml/lorentz-gatr"
 
 [tool.setuptools]
-packages = ["lgatr"]
+packages = ["lgatr", "lgatr.layers", "lgatr.interface", "lgatr.nets", "lgatr.primitives", "lgatr.utils"]
